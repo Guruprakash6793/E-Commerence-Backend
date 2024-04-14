@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 
 const connectDB = async () => {
   try {
-    await mongoose.connect("mongodb://localhost/E-COM-PROJECT", {});
+    await mongoose.connect("mongodb+srv://guruprakashg:Indi%40%40123@cluster1.rcee8pg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1", {});
     console.log("mongoDB connected");
   } catch (error) {
     console.log(error);
